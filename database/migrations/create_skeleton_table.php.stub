@@ -1,0 +1,31 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateSkeletonTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('contact_us', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->string('email');
+            $table->string('contact');
+            $table->text('message');
+            $table->timestamps();
+            $table->softDeletes();
+        });
+    
+   			//Also You Can Create Second Table Just Write Code Here 
+        // Schema::create('create_contactus_table', function (Blueprint $table) {
+        //     $table->bigIncrements('id');
+        //     $table->string('name');
+        //     // add fields
+
+        //     $table->timestamps();
+        // });
+
+    }
+}
