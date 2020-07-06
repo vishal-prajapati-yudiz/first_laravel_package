@@ -26,7 +26,7 @@ class SkeletonServiceProvider extends ServiceProvider
 
             if (! class_exists('CreatePackageTable')) {
                 $this->publishes([
-                    __DIR__ . '/../database/migrations/create_skeleton_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_skeleton_table.php'),
+                    __DIR__ . '/../database/migrations/create_contactus_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_contactus_table.php'),
                 ], 'migrations');
             }
 
