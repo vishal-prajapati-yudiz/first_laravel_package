@@ -34,23 +34,25 @@ class SkeletonServiceProvider extends ServiceProvider
                 SkeletonCommand::class,
             ]);
         }
+        
+        //Routes
+        $this->registerRoutes();
 
         //Views
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'skeleton');
         
-        //Routes
-        Route::macro('skeleton', function (string $prefix) {
-            Route::prefix($prefix)->group(function () {
-                Route::get('/', [ContactusController::class, 'index'])->name('contactus');
-                Route::post('/contactus/email', [ContactusController::class,'checkEmail'])->name('user.contactus.email');
-                Route::post('/contactus/contact', [ContactusController::class,'checkContact'])->name('user.contactus.contact');
-                Route::post('/contactus/store', [ContactusController::class, 'store'])->name('contactus.save');
-            });
-        });
+        
     }
 
     public function register()
     {
         $this->mergeConfigFrom(__DIR__.'/../config/skeleton.php', 'skeleton');
+    }
+
+    protected function registerRoutes()
+    {
+        Route::group([], function(){
+            $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+        });
     }
 }

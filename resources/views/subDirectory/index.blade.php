@@ -27,9 +27,6 @@
               <label class="col-md-3 control-label" for="name">Name</label>
               <div class="col-md-9">
                 <input id="name" name="name" type="text" placeholder="Enter Your name" class="form-control">
-                @if($errors->has('name'))
-                    <span class="error-help">{{ $errors->first('name') }}</span>
-                @endif
               </div>
             </div>
     
@@ -38,9 +35,6 @@
               <label class="col-md-3 control-label" for="email">E-mail</label>
               <div class="col-md-9">
                 <input id="email" name="email" type="text" placeholder="Enter Your email" class="form-control">
-                @if($errors->has('email'))
-                    <span class="error-help">{{ $errors->first('email') }}</span>
-                @endif
               </div>
             </div>
 
@@ -49,9 +43,6 @@
               <label class="col-md-3 control-label" for="contact">Mobile</label>
               <div class="col-md-9">
                 <input id="contact" name="contact" type="text" placeholder="Enter Your mobile number" class="form-control">
-                @if($errors->has('contact'))
-                    <span class="error-help">{{ $errors->first('contact') }}</span>
-                @endif
               </div>
             </div>
     
@@ -60,9 +51,6 @@
               <label class="col-md-3 control-label" for="message">Message</label>
               <div class="col-md-9">
                 <textarea class="form-control" id="message" name="message" placeholder="Enter Your Message..." rows="5"></textarea>
-                @if($errors->has('message'))
-                    <span class="error-help">{{ $errors->first('message') }}</span>
-                @endif
               </div>
             </div>
   
