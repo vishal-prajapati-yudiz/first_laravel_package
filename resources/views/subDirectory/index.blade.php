@@ -24,7 +24,7 @@
             
             <!-- Name input-->
             <div class="form-group">
-              <label class="col-md-3 control-label" for="name">Name</label>
+              <label class="col-md-3 control-label" for="name">Enter Name</label>
               <div class="col-md-9">
                 <input id="name" name="name" type="text" placeholder="Enter Your name" class="form-control">
               </div>
@@ -32,7 +32,7 @@
     
             <!-- Email input-->
             <div class="form-group">
-              <label class="col-md-3 control-label" for="email">E-mail</label>
+              <label class="col-md-3 control-label" for="email">Enter E-mail</label>
               <div class="col-md-9">
                 <input id="email" name="email" type="text" placeholder="Enter Your email" class="form-control">
               </div>
@@ -40,7 +40,7 @@
 
              <!-- Contact input-->
             <div class="form-group">
-              <label class="col-md-3 control-label" for="contact">Mobile</label>
+              <label class="col-md-3 control-label" for="contact">Enter Mobile</label>
               <div class="col-md-9">
                 <input id="contact" name="contact" type="text" placeholder="Enter Your mobile number" class="form-control">
               </div>
@@ -48,7 +48,7 @@
     
             <!-- Message body -->
             <div class="form-group">
-              <label class="col-md-3 control-label" for="message">Message</label>
+              <label class="col-md-3 control-label" for="message">Enter Message</label>
               <div class="col-md-9">
                 <textarea class="form-control" id="message" name="message" placeholder="Enter Your Message..." rows="5"></textarea>
               </div>
